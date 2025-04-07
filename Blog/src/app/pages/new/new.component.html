@@ -1,0 +1,38 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="container mt-4">
+    <div class="mb-3">
+        <label for="title" class="form-label">Titulo de la publicacion</label>
+        <input formControlName="title" type="text" id="title" class="form-control" placeholder="Ingresa el título">
+    </div>
+
+    <div class="mb-3">
+        <label for="text" class="form-label">Texto de la publicacion</label>
+        <textarea formControlName="text" id="text" class="form-control" rows="4" placeholder="Escribe el texto"></textarea>
+    </div>
+
+    <div class="mb-3">
+        <label for="author" class="form-label">Autor de la publicacion</label>
+        <input formControlName="author" type="text" id="author" class="form-control" placeholder="Ingresa el autor">
+    </div>
+
+    <div class="mb-3">
+        <label for="image" class="form-label">Imagen</label>
+        <input formControlName="image" type="text" id="image" class="form-control" placeholder="URL de la imagen">
+    </div>
+
+    <div class="mb-3">
+        <label for="category" class="form-label">Categoría</label>
+        <select formControlName="category" id="category" class="form-control">
+            <option value="" disabled selected>Ingresa la categoría</option>
+            <option value="Programming">Programming</option>
+            <option value="Technology">Technology</option>
+            <option value="Design">Design</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label for="date" class="form-label">Fecha</label>
+        <input formControlName="date" type="date" id="date" class="form-control" placeholder="Ingresa la categoría">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Publicar</button>
+</form>

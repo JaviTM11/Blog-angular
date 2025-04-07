@@ -1,0 +1,38 @@
+<div class="container mt-4">
+<div class="mb-3">
+    <label for="title" class="form-label">Titulo de la publicacion</label>
+    <input type="text" id="title" class="form-control" placeholder="Ingresa el título" [value]= "post!.title" >
+</div>
+
+<div class="mb-3">
+    <label for="text" class="form-label">Texto de la publicacion</label>
+    <textarea id="text" class="form-control" rows="4" placeholder="Escribe el texto" [value]= "post!.text"></textarea>
+</div>
+
+<div class="mb-3">
+    <label for="author" class="form-label">Autor de la publicacion</label>
+    <input type="text" id="author" class="form-control" placeholder="Ingresa el autor" [value]= "post!.author">
+</div>
+
+<div class="mb-3">
+    <label for="image" class="form-label">Imagen</label>
+    <input type="text" id="image" class="form-control" placeholder="URL de la imagen" [value]= "post!.image">
+</div>
+
+<div class="mb-3">
+    <label for="category" class="form-label">Categoría</label>
+    <select id="category" class="form-control" [value]= "post!.category.title">
+        <option value="" disabled selected>Ingresa la categoría</option>
+        <option value="Programming">Programming</option>
+        <option value="Technology">Technology</option>
+        <option value="Design">Design</option>
+    </select>
+</div>
+
+<div class="mb-3">
+    <label for="date" class="form-label">Fecha</label>
+    <input type="date" id="date" class="form-control" placeholder="Ingresa la categoría" [value]= "post!.date">
+</div>
+
+<button type="submit" class="btn btn-primary">Editar</button>
+</div>
